@@ -1,0 +1,585 @@
+@font-face{
+  font-family: "Avenir";
+  src:url(fonts/avenir.ttf);
+}
+
+@font-face{
+    font-family: "Bold Font";
+    src:url(fonts/theboldfont.ttf);
+}
+
+@font-face{
+    font-family: "Cocos";
+    src:url(fonts/CocogoosePro-trial.ttf);
+}
+
+@font-face{
+  font-family: "Montserrat Light";
+  src:url(fonts/montserrat_light.otf);
+}
+
+@font-face{
+  font-family: "Montserrat Regular";
+  src:url(fonts/montserrat_regular.otf);
+}
+
+@font-face{
+  font-family: "Elianto";
+  src:url(fonts/Elianto-Regular.ttf);
+}
+
+@font-face{
+  font-family: "Ikaros";
+  src:url(fonts/Ikaros_Regular.otf);
+}
+
+@font-face{
+  font-family: "Mosk";
+  src:url(fonts/Mosk_Extra-Bold_800.ttf);
+}
+
+.vitru{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: -150px 0px;
+  background-image: url('images/vitru.svg');
+  margin: auto;
+}
+
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
+.projectlink{
+  color: black;
+}
+
+.projectlink:hover{
+  color: black;
+  cursor: pointer;
+}
+
+.card{
+  width: 100%;
+  background-color: white;
+  box-shadow: 5px 5px 15px #e1e1e1;
+  height: auto;
+  border-radius: 10px;
+  height: auto;
+  padding-bottom: 15px;
+  -webkit-transition:all 0.2s ease;
+}
+
+.cardimg{
+  width: 100%;
+  color: black;
+  height: 300px;
+  background-size: cover;
+  background-size: 100%;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-transition:all 0.1s ease;
+}
+
+.entry-title h4{
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #3bffbe 50%);
+  background-size: 400%;
+  background-position: 0px 0;
+  display: inline;
+  transition: .9s ease-in-out;
+}
+
+
+.projectlink:hover .entry-title h4{
+  text-decoration: none !important;
+  border: none;
+  -webkit-animation: titleanim 0.6s;
+}
+
+.entry-title h5{
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #b9b9b9 50%);
+  background-size: 400%;
+  background-position: 0px 0;
+  display: inline-block;
+  transition: .9s ease-in-out;
+}
+
+
+.projectlink:hover .entry-title h5{
+  -webkit-animation: typeanim 0.8s;
+}
+
+@keyframes titleanim {
+0% {
+  color: rgba(0,0,0,0);
+  background-position: 0px 0;
+}
+60% {
+  color: rgba(0,0,0,0);
+}
+100% {
+  background-position: -100% 0;
+  color: rgba(0,0,0,1);
+}
+}
+
+@keyframes typeanim {
+  0% {
+    color: rgba(185,185,185,0);
+    background-position: 0px 0;
+  }
+  50% {
+    color: rgba(185,185,185,0);
+  }
+  100% {
+    background-position: -100% 0;
+    color: rgba(185,185,185,1);
+  }
+}
+
+.projectlink:hover .card{
+  box-shadow: 10px 10px 20px rgb(200,200,200);
+}
+
+header{
+  width: 100%;
+  height: 100%;
+  background-color: #3bffbe;
+}
+
+.container-fluid{
+  padding:0px !important;
+}
+
+#laptop{
+    margin-top: -390px !important;
+    margin-bottom: 2vh;
+  }
+
+  #heading{
+    font-family: 'Elianto';
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 10vh;
+    margin-top: -20vh;
+  }
+
+  #heading_desc{
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 2.5vh;
+    padding: 5px;
+    margin-top: 2vh;
+    margin-bottom: 30px;
+  }
+
+  #readmore{
+    text-decoration: none;
+    color: #3bffbe;
+      border-radius: 3px;
+    font-size: 2vh;
+      background-color: white;
+      font-family: 'Montserrat Regular';
+      text-transform: uppercase;
+    padding: 12px 35px;
+    -webkit-transition : all 0.3s ease;
+  }
+
+  #readmore:hover{
+    background-color: #f8f8f8;
+  }
+
+  #glasses{
+    float: center;
+    width: 170px;
+    margin-top: -390px;
+    margin-left: 47%;
+  }
+
+  #coffee{
+    width: 150px;
+    margin-top: 0px;
+    margin-left: -30px;
+    float: left;
+  }
+
+  #pens{
+    position: relative;
+    width: 80px;
+    margin-left: 190px;
+    margin-top: 70px;
+  }
+
+  #phone{
+    float: right;
+    margin-top: -200px;
+  }
+
+  h3{
+    font-size: 25px;
+  }
+
+  h2{
+    font-size: 35px;
+  }
+
+  .intro p{
+    font-size: 20px;
+  }
+
+  .card{
+      margin-top: 30px;
+  }
+
+  #probcard{
+      margin-top: -80px;
+  }
+
+  #rightcard{
+      margin-top: 100px;
+  }
+
+  #view{
+      width: 90%;
+      height:50px;
+      background-color: #3bffbe;
+      color: white;
+      text-decoration: none;
+      padding: 15px 45px;
+      font-size: 20px;
+      font-family: "Montserrat Light";
+      text-transform: uppercase;
+      -webkit-transition : all 0.3s ease;
+      box-shadow: 2px 2px 0px #e9e9e9;
+  }
+
+
+  #view:hover{
+      background-color: #2fcc98 ;
+      box-shadow: 5px 5px 5px #e9e9e9;
+  }
+
+  .active{
+      color: #3bffbe !important;
+      border-left: 25px solid #3bffbe;
+      padding-left: 30px;
+  }
+
+  .contact a{
+      -webkit-transition: all 0.1s ease;
+  }
+
+  .contact a:hover{
+      text-decoration: none;
+      color: #3bffbe !important;
+  }
+
+  @media only screen and (max-device-width: 1024px) {
+    #laptop{
+      margin-top: 30em;
+    }
+
+    #glasses{
+      width: 100px;
+      margin-top: -40vh;
+    }
+
+    #phone{
+      width: 20%;
+      margin-top: -50px;
+    }
+
+      .skills .row h5{
+          font-size: 16px;
+      }
+  }
+
+  @media only screen and (max-device-width: 1700px) {
+    #laptop{
+      margin-top: -50rem;
+    }
+
+    #heading{
+      margin-top: -15vh;
+    }
+
+    #glasses{
+      width: 160px;
+      margin-top: -40vh;
+    }
+
+    #phone{
+      width: 20%;
+      float: none;
+      margin-top: -50px;
+      margin-left: 800px;
+    }
+
+    #heading_desc{
+      font-size: 25px;
+    }
+  }
+
+
+@media only screen and (max-device-width: 769px) {
+  #laptop{
+    margin-top: -2vh !important;
+  }
+
+  .vitru{
+    background-size: contain;
+    height: 500px;
+    width: 100%;
+    background-position: 0px 0px;
+    margin: auto;
+  }
+
+  #heading{
+    font-size: 5vh;
+    margin-top: 0vh;
+  }
+
+  #heading_desc{
+    font-size: 3vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+  }
+
+  #pens{
+    width: 10%;
+    margin-left: 25%;
+    margin-top: 40px;
+  }
+
+  #coffee{
+    width: 20%;
+    margin-top: 30px;
+  }
+
+  #phone{
+    width: 30%;
+    margin-top: -350px;
+    margin-left: 70%;
+  }
+
+  #glasses{
+    width: 100px;
+    margin-top: -150px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  .skills .row h5{
+      font-size: 20px;
+  }
+
+  .card{
+      margin-top: 20px;
+  }
+
+  #probcard{
+      margin-top: 0px;
+  }
+
+  #rightcard{
+      margin-top: 20px !important;
+  }
+}
+
+  @media only screen and (max-device-width: 426px) {
+  #laptop{
+    margin-top: -4rem !important;
+  }
+
+  .intro p{
+    font-size: 16px;
+  }
+
+  .active{
+      color: #3bffbe !important;
+      border-left: none;
+      padding-left: 0px;
+  }
+
+  #heading{
+    font-size: 5vh;
+    margin-top: 5vh;
+  }
+
+  #heading_desc{
+    font-size: 3vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+  }
+
+  #pens{
+    width: 10%;
+    margin-left: 30%;
+    margin-top: 40px;
+  }
+
+  #coffee{
+    width: 20%;
+    margin-top: 30px;
+  }
+
+  #phone{
+    width: 30%;
+    margin-top: 0px;
+    margin-left: 14%;
+  }
+
+  #glasses{
+    width: 20%;
+    margin-top: -50px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  .skills .textchange h5{
+      font-size: 13.5px ;
+  }
+
+  .card{
+      margin-top: 50px !important;
+  }
+
+  #rightcard{
+      margin-top: 50px !important;
+  }
+}
+
+@media only screen and (max-device-width: 345px) {
+  #laptop{
+      margin-top: -4rem !important;
+  }
+
+  .intro p{
+      font-size: 16px;
+  }
+
+  #heading{
+      font-size: 5vh;
+      margin-top: 5vh;
+  }
+
+  #heading_desc{
+      font-size: 3vh;
+      margin-top: 4vh;
+      margin-bottom: 2vh;
+  }
+
+  #pens{
+      width: 10%;
+      margin-left: 30%;
+      margin-top: 40px;
+  }
+
+  #coffee{
+      width: 20%;
+      margin-top: 30px;
+  }
+
+  #phone{
+      width: 30%;
+      margin-top: 0px;
+      margin-left: 14%;
+  }
+
+  #glasses{
+      width: 20%;
+      margin-top: -50px;
+  }
+
+  h3{
+      font-size: 20px;
+  }
+
+  h2{
+      font-size: 20px;
+  }
+
+  .skills .textchange h5{
+      font-size: 10px ;
+  }
+
+  .card{
+      margin-top: 50px;
+  }
+
+  .rightcard{
+      margin-top: 0px !important;
+  }
+}
+
+
+.slideanim {visibility:hidden;}
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slide {
+0% {
+  opacity: 0;
+  transform: translateY(70%);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0%);
+}
+}
+@-webkit-keyframes slide {
+0% {
+  opacity: 0;
+  -webkit-transform: translateY(70%);
+}
+100% {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+}
+}
+
+.opanim {visibility:hidden;}
+.opac {
+  animation-name: opac;
+  -webkit-animation-name: opac;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes opac {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+@-webkit-keyframes opac {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
