@@ -29,17 +29,38 @@ async function get_medium_data(){
       console.log(jqXHR)
     },
     success: function (data) {
-      console.log(data); // note: data is already json type, you just specify dataType: jsonp
-      return data;
+      height = $('.blog .row').find('#art1_link blogposts').height();
+      console.log(height);
+
+      $('.blog .row').find('#art1_img').css("background-image", 'url(' + data.items[0].thumbnail + ')');
+      $('.blog .row').find('#art1_link').attr("href", data.items[0].link);
+      $('.blog .row').find('#art1_title').text(data.items[0].title);
+      description = data.items[0].description
+      description_sub = description.substring(description.indexOf("<p>") + 3, description.indexOf("</p>"));
+      $('.blog .row').find('#art1_desc').text(description_sub);
+
+      $('.blog .row').find('#art2_img').css("background-image", 'url(' + data.items[1].thumbnail + ')');
+      $('.blog .row').find('#art2_link').attr("href", data.items[1].link);
+      $('.blog .row').find('#art2_title').text(data.items[1].title);
+      description = data.items[1].description
+      description_sub = description.substring(description.indexOf("<p>") + 3, description.indexOf("</p>"));
+      $('.blog .row').find('#art2_desc').text(description_sub);
+
+      $('.blog .row').find('#art3_img').css("background-image", 'url(' + data.items[2].thumbnail + ')');
+      $('.blog .row').find('#art3_link').attr("href", data.items[2].link);
+      $('.blog .row').find('#art3_title').text(data.items[2].title);
+      description = data.items[2].description
+      description_sub = description.substring(description.indexOf("<p>") + 3, description.indexOf("</p>"));
+      $('.blog .row').find('#art3_desc').text(description_sub);
     }
   });
 }
 
-get_behance_data();
-get_medium_data();
-
 $(document).ready(function(){
   $(window).scroll(function() {
+    height = $('.blog .row').find('#art1_link').height();
+    console.log(height);
+
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
 
@@ -59,18 +80,21 @@ $(document).ready(function(){
     });
   });
 
-$("#readmore").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
+  $("#readmore").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
 
-      var hash = this.hash;
+        var hash = this.hash;
 
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
 
-        window.location.hash = hash;
-      });
-    }
-  });
+          window.location.hash = hash;
+        });
+      }
+    });
+
+    get_behance_data();
+    get_medium_data();
 });
