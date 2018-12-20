@@ -11,7 +11,7 @@ async function get_behance_data(){
       console.log(jqXHR)
     },
     success: function (data) {
-      console.log(data); // note: data is already json type, you just specify dataType: jsonp
+       // note: data is already json type, you just specify dataType: jsonp
       $('.designs .tz-gallery').find('#gall_img1').attr('src', data.projects[0].covers.max_808);
       $('.designs .tz-gallery').find('#gall_img2').attr('src', data.projects[1].covers.max_808);
       $('.designs .tz-gallery').find('#gall_img3').attr('src', data.projects[2].covers.max_808);
