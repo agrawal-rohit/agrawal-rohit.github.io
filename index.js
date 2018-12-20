@@ -12,7 +12,19 @@ async function get_behance_data(){
     },
     success: function (data) {
       console.log(data); // note: data is already json type, you just specify dataType: jsonp
-      return data;
+      $('.designs .tz-gallery').find('#gall_img1').attr('src', data.projects[0].covers.max_808);
+      $('.designs .tz-gallery').find('#gall_img2').attr('src', data.projects[1].covers.max_808);
+      $('.designs .tz-gallery').find('#gall_img3').attr('src', data.projects[2].covers.max_808);
+      $('.designs .tz-gallery').find('#gall_img4').attr('src', data.projects[3].covers.max_808);
+      $('.designs .tz-gallery').find('#gall_img5').attr('src', data.projects[4].covers.max_808);
+      $('.designs .tz-gallery').find('#gall_img6').attr('src', data.projects[5].covers.max_808);
+
+      $('.designs .tz-gallery').find('#gall_link1').attr("href", data.projects[0].url);
+      $('.designs .tz-gallery').find('#gall_link2').attr("href", data.projects[1].url);
+      $('.designs .tz-gallery').find('#gall_link3').attr("href", data.projects[2].url);
+      $('.designs .tz-gallery').find('#gall_link4').attr("href", data.projects[3].url);
+      $('.designs .tz-gallery').find('#gall_link5').attr("href", data.projects[4].url);
+      $('.designs .tz-gallery').find('#gall_link6').attr("href", data.projects[5].url);
     }
   });
 }
@@ -29,8 +41,6 @@ async function get_medium_data(){
       console.log(jqXHR)
     },
     success: function (data) {
-      height = $('.blog .row').find('#art1_link blogposts').height();
-      console.log(height);
 
       $('.blog .row').find('#art1_img').css("background-image", 'url(' + data.items[0].thumbnail + ')');
       $('.blog .row').find('#art1_link').attr("href", data.items[0].link);
@@ -50,7 +60,7 @@ async function get_medium_data(){
       $('.blog .row').find('#art3_link').attr("href", data.items[2].link);
       $('.blog .row').find('#art3_title').text(data.items[2].title);
       description = data.items[2].description
-      description_sub = description.substring(description.indexOf("<p>") + 3, description.indexOf("</p>"));
+      description_sub = description.substring(description.indexOf("<blockquote>") + 12, description.indexOf("</blockquote>"));
       $('.blog .row').find('#art3_desc').text(description_sub);
     }
   });
@@ -58,8 +68,6 @@ async function get_medium_data(){
 
 $(document).ready(function(){
   $(window).scroll(function() {
-    height = $('.blog .row').find('#art1_link').height();
-    console.log(height);
 
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
