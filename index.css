@@ -58,7 +58,7 @@ a, a:hover, a:visited, a:active{
 }
 
 #art2_img {
-  margin-left: 35px;
+  margin-left: -15px;
 }
 
 .blogposts{
@@ -376,6 +376,36 @@ header{
 
 
 @media only screen and (max-device-width: 769px) {
+
+  .blog_img{
+    width: 110%;
+    height: 400px;
+    background-size: cover;
+  }
+
+  #art1_img{
+    height: 400px;
+    background-size: cover;
+    margin-left: -15px;
+  }
+
+  #art3_img{
+    margin-left: -15px;
+  }
+
+  #art2_img {
+    margin-left: -15px;
+  }
+  .blogposts h2{
+    font-family: "Montserrat";
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  .blogposts p{
+    font-size: 15px;
+    margin-left: 20px;
+  }
+
   #laptop{
     margin-top: -2vh !important;
   }
@@ -447,6 +477,36 @@ header{
 }
 
   @media only screen and (max-device-width: 426px) {
+
+    .blog_img{
+      width: 110%;
+      background-size: cover;
+    }
+
+    #art1_img{
+      height: 235px;
+      background-size: cover;
+      margin-left: -15px;
+    }
+
+    #art3_img{
+      margin-left: -15px;
+    }
+
+    #art2_img {
+      margin-left: -15px;
+    }
+    .blogposts h2{
+      font-family: "Montserrat";
+      font-size: 30px;
+      margin-left: 20px;
+    }
+    .blogposts p{
+      font-size: 15px;
+      margin-left: 20px;
+    }
+
+
   #laptop{
     margin-top: -4rem !important;
   }
@@ -508,6 +568,11 @@ header{
 
   .card{
       margin-top: 50px !important;
+  }
+
+  .cardimg{
+    height: 200px;
+    background-repeat: no-repeat;
   }
 
   #rightcard{

@@ -1,0 +1,56 @@
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 10px;
+}
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.02);
+    box-shadow: 10px 10px 20px rgb(200,200,200);
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #e1e1e1;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+@media only screen and (max-device-width: 426px) {
+  .tz-gallery .lightbox img{
+    margin-bottom: 10px;
+  }
+}
