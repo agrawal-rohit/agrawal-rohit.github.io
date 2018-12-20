@@ -507,8 +507,7 @@ header{
     }
 
     #readmore{
-      font-size: 1vh;
-      width: 100%;
+      display: block;
     }
 
   #laptop{
@@ -591,6 +590,10 @@ header{
 
   .intro p{
       font-size: 16px;
+  }
+
+  #readmore{
+    display: block;
   }
 
   #heading{
