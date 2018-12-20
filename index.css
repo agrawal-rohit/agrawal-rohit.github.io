@@ -38,6 +38,10 @@
   src:url(fonts/Mosk_Extra-Bold_800.ttf);
 }
 
+.skillsicons{
+  margin-top: 50px;
+}
+
 a, a:hover, a:visited, a:active{
   color: black;
 }
@@ -481,6 +485,18 @@ header{
 }
 
   @media only screen and (max-device-width: 426px) {
+
+    .skillsicons{
+      margin-top: -100px;
+    }
+
+    #skill1{
+      margin-bottom: 100px;
+    }
+
+    #skill2{
+      margin-bottom: 100px;
+    }
 
     .blog_img{
       width: 110%;
