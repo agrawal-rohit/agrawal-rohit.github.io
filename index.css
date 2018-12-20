@@ -232,7 +232,6 @@ header{
     color: #3bffbe;
     border-radius: 3px;
     font-size: 2vh;
-    display: block;
     background-color: white;
     font-family: 'Montserrat Regular';
     text-transform: uppercase;
@@ -470,6 +469,10 @@ header{
 
   #probcard{
       margin-top: 0px;
+  }
+
+  #readmore{
+    display: block;
   }
 
   #rightcard{
