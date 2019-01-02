@@ -1,6 +1,6 @@
 var behanceUserAPI = "https://www.behance.net/v2/users/rohitcg/projects?api_key=D6O8OKmcmeQpnxHguxB4HCJja4qHK7G3";
-
 var mediumAPI = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40rohit_agrawal%2F";
+
 async function get_behance_data(){
   var _reprojected_lat_lng = await $.ajax({
     type: 'GET',
@@ -41,7 +41,6 @@ async function get_medium_data(){
       console.log(jqXHR)
     },
     success: function (data) {
-
       $('.blog .row').find('#art1_img').css("background-image", 'url(' + data.items[0].thumbnail + ')');
       $('.blog .row').find('#art1_link').attr("href", data.items[0].link);
       $('.blog .row').find('#art1_title').text(data.items[0].title);
