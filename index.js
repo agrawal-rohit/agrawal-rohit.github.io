@@ -59,7 +59,7 @@ async function get_medium_data(){
       $('.blog .row').find('#art3_link').attr("href", data.items[2].link);
       $('.blog .row').find('#art3_title').text(data.items[2].title);
       description = data.items[2].description
-      description_sub = description.substring(description.indexOf("<blockquote>") + 12, description.indexOf("</blockquote>"));
+      description_sub = description.substring(description.indexOf("<p>") + 3, description.indexOf("</p>"));
       $('.blog .row').find('#art3_desc').text(description_sub);
     }
   });
