@@ -80,7 +80,7 @@ a, a:hover, a:visited, a:active{
 }
 
 .blogposts h2{
-  font-family: "Montserrat";
+  font-family: "Montserrat Light";
   font-size: 30px;
 }
 
@@ -223,7 +223,7 @@ header{
   }
 
   #heading_desc{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat Light';
     color: white;
     font-size: 2.5vh;
     padding: 5px;
