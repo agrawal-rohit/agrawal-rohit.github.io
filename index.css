@@ -289,7 +289,7 @@ header{
     margin-bottom: 30px;
   }
 
-  #readmore{
+  #hireme{
     text-decoration: none;
     color: #3bffbe;
     border-radius: 3px;
@@ -301,8 +301,25 @@ header{
     -webkit-transition : all 0.3s ease;
   }
 
-  #readmore:hover{
+  #hireme:hover{
     background-color: #f8f8f8;
+  }
+
+  #readmore{
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    font-size: 2vh;
+    background-color: transparent;
+    border: 2px solid white;
+    font-family: 'Montserrat Regular';
+    text-transform: uppercase;
+    padding: 12px 35px;
+    -webkit-transition : all 0.3s ease;
+  }
+
+  #readmore:hover{
+    background-color: rgba(255,255,255,0.4);
   }
 
   #glasses{
@@ -569,7 +586,7 @@ label{
       margin-top: 0px;
   }
 
-  #readmore{
+  #readmore, #hireme{
     display: block;
   }
 
@@ -635,7 +652,7 @@ label{
       margin-left: 20px;
     }
 
-    #readmore{
+    #readmore, #hireme{
       display: block;
     }
 
@@ -721,7 +738,7 @@ label{
       font-size: 16px;
   }
 
-  #readmore{
+  #readmore, #hireme{
     display: block;
   }
 
