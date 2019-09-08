@@ -8,11 +8,19 @@
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="owl.carousel.min.css">
+
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="index.js"></script>
+<!-- Include js plugin -->
+<script src="owl.carousel.min.js"></script>
+
 <link rel="stylesheet" href="fluid-gallery.css">
 <link rel="stylesheet" href="index.css">
 
@@ -35,7 +43,7 @@
 
 <div class="row-fluid">
 <br><br>
-<a href="#hireme" id="hireme">Hire me</a>
+<a href="#hiremelink" id="hireme">Hire me</a>
 <a href="#readmorelink" id="readmore">Wow I'm impressed, Tell me more!</a>
 </div>
 </div>
@@ -105,8 +113,49 @@
 	</div>
 </div>
 
+<div class="testimonials" style="position: relative;background-color: #fcfcfc;display: block; width: 100%; height: auto; z-index: 2;">
+    <br><br><br><br>
+    <div class="row">
+    <div class="col-xs-10 col-centered">
+        <h3 class="text-center slideanim" style="color: black; font-family: 'Montserrat Regular'; color: #b9b9b9; ">TESTIMONIALS</h3>
+        <h2 class="text-center slideanim" style="color: black; font-family: 'Montserrat Light';">What my clients say</h2>
+    </div>
+    </div>
+    <br><br><br>
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="customers-testimonials" class="owl-carousel">
+    
+                <!--TESTIMONIAL 1 -->
+                <div class="item">
+                  <div class="shadow-effect">
+                    <img class="img-circle" src="images/default_client_male.png" alt="">
+                    <p>He is so fast and reliable. <br>
+                        He also teaches you over the tasks and shares knowledge. <br>
+                        Hope to work with him again. <br>
+                        
+                        Best,</p>
+                  </div>
+                  <div class="testimonial-name">Cem Akin, Turkey</div>
+                </div>
+                <!--END OF TESTIMONIAL 1 -->
 
-<div class="projects" style="position: relative;background-color: #fcfcfc;display: block; width: 100%; height: auto; z-index: 2;">
+                <!--TESTIMONIAL 1 -->
+                <div class="item">
+                    <div class="shadow-effect">
+                      <img class="img-circle" src="images/michaels.PNG" alt="">
+                      <p>Rohit did a great job.<br> He is excellent guy to work for.<br> I will strongly consider him for my future projects.</p>
+                    </div>
+                    <div class="testimonial-name">Michael S, New Delhi</div>
+                  </div>
+                  <!--END OF TESTIMONIAL 1 -->
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+</div>
+
+<div class="projects" style="position: relative;background-color: white;display: block; width: 100%; height: auto; z-index: 2;">
     <div class="container" style="padding: 0px 40px !important;">
     <br><br><br><br>
     <div class="row">
@@ -129,7 +178,7 @@
         <br><br><br><br>
     </div>
     
-<div class="designs" style="position: relative;background-color: white;display: block; width: 100%; height: auto; z-index: 2;">
+<div class="designs" style="position: relative;background-color: #fcfcfc;display: block; width: 100%; height: auto; z-index: 2;">
     <div class="container" style="padding: 0px 40px !important;">
     <br><br><br><br>
     <div class="row">
@@ -187,7 +236,7 @@
     <br><br><br>
 
 
-<div class="blog" style="background-color: #fcfcfc; width: 100%; height: auto; z-index: 2;">
+<div class="blog" style="background-color: white; width: 100%; height: auto; z-index: 2;">
     <div class="container" style="padding: 0px 40px !important;">
     <br><br><br><br>
     <div class="row">
@@ -249,11 +298,11 @@
     </div>
 </div>
 
-<div class="contact" style="background-color: white; width: 100%; height: auto; z-index: 2;">
+<div class="contact" style="background-color: #fcfcfc; width: 100%; height: auto; z-index: 2;">
     <div class="container" style="padding: 0px 40px !important;">
     <br><br><br><br>
     <div class="row">
-    <div id="hireme" class="col-xs-10 col-centered">
+    <div id="hiremelink" class="col-xs-10 col-centered">
         <h3 class="text-center slideanim" style="color: black; font-family: 'Montserrat Regular'; color: #b9b9b9; ">CONTACT</h3>
         <h2 class="text-center slideanim" style="color: black; font-family: 'Montserrat Light';">Want to work with me?</h2>
     </div>
@@ -320,5 +369,3 @@
 
 </body>
 </html>
-
-<script src="index.js"></script>
