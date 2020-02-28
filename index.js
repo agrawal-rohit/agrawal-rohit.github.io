@@ -33,9 +33,6 @@ async function get_github_data(){
   var _reprojected_lat_lng = await $.ajax({
     type: 'GET',
     dataType: 'json',
-    headers: {
-      "Authorization": "token e819398a6737298cc2f148f70d886da21495deea"
-    },
     url: "https://api.github.com/users/agrawal-rohit/repos",
     error: function (jqXHR, textStatus, errorThrown) {
       console.log(jqXHR)
